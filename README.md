@@ -1,6 +1,9 @@
 # AlgorithmStudy 
 <h1>😨 Co Al Mot <h1/>   
   
+  * Co ding
+  * Al gorithm
+  * Mot ivation
   
   ***
 ## 😈스터디원 소개

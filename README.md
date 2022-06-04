@@ -1,5 +1,5 @@
 # AlgorithmStudy 
-<h1>😨 Co Al Mot <h1/>   
+# 😨 Co Al Mot
   
   * Co ding
   * Al gorithm

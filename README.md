@@ -1,4 +1,4 @@
-# AlgorithmStudy 
+## AlgorithmStudy 
 # 😨 Co Al Mot
   
   * Co  ding

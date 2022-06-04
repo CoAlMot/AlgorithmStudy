@@ -25,6 +25,9 @@
 📖 주 1회 알고리즘 문제풀이(백준 실-플 or 프로그래머스2-4렙 등 난이도의 문제) 발표 및 질문   
 📖 게더타운(화이트보드), 블로그 포스팅 이용   
 
+![스크린샷 2022-04-25 오후 8 11 27](https://user-images.githubusercontent.com/95848796/171983284-c447b0eb-5dcc-420a-ab58-903834c9224e.png)   
+
+
 게더타운 주소
 [https://app.gather.town/invite?token=eAmL7u2UlvwjBA_odf6UtsgAD5wvIP8o](https://app.gather.town/invite?token=eAmL7u2UlvwjBA_odf6UtsgAD5wvIP8o)
 

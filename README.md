@@ -1,9 +1,9 @@
 # AlgorithmStudy 
 # 😨 Co Al Mot
   
-  * Co ding
-  * Al gorithm
-  * Mot ivation
+  * Co  ding
+  * Al  gorithm
+  * Mot  ivation
   
   ***
 ## 😈스터디원 소개

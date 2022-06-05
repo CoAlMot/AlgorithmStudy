@@ -1,13 +1,11 @@
 # 문제 구성 📖
-
 > 코딩테스트 사이트 : 백준  
 > 난이도 : 실버2     
 > 풀이 날짜 : 2022.06.04  
-> 사용한 풀이 방법 : 완전탐색
+> 사용한 풀이 방법 : DFS
 
 ## 문제링크
-
-https://www.acmicpc.net/problem/18111
+https://www.acmicpc.net/problem/24479
 
 ## 풀이법
 

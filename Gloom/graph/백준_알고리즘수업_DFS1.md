@@ -32,17 +32,60 @@ https://www.acmicpc.net/problem/24479
 // 낮은 번호부터 순환하여, 시작 정점부터 도착하게되는 순서대로 출력
 // 도달할수 있는지를 파악하고, 해당 값을 대입
 
-public static void DFS(int currentNode,ArrayList<Integer>[]nodeArray,boolean[]visited,int[]answer){
+public class Main{
+    static int sequence= 0;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(st.nextToken()); //Node
+        int E = Integer.parseInt(st.nextToken()); // Edge
+        int StartN = Integer.parseInt(st.nextToken()); // StartNode
+
+        // 간선들 받아오기
+        ArrayList<Integer>[] nodeArray = new ArrayList[N + 1];
+        for(int i = 1 ; i< nodeArray.length; i++){
+            nodeArray[i] = new ArrayList<>();
+        }
+
+        boolean[] visited = new boolean[N+1];
+        int[] answer = new int[N];
+
+        for(int i = 0; i < E; i++){
+            st = new StringTokenizer(br.readLine());
+            int one = Integer.parseInt(st.nextToken());
+            int two = Integer.parseInt(st.nextToken());
+            nodeArray[one].add(two); // 무방향이기에
+            nodeArray[two].add(one); // 양쪽 방향값을 다 배열에 넣어줌
+        }
+
+        for(int i = 1 ; i< nodeArray.length; i++){
+            Collections.sort(nodeArray[i],Collections.reverseOrder());
+        }
+
+        // start -> 전체 순환
+        visited[StartN] =true;
+        DFS(StartN, nodeArray, visited, answer);
+
+        for(int i :answer){
+            System.out.println(i);
+        }
+
+
+    }
+
+    public static void DFS(int currentNode, ArrayList<Integer>[] nodeArray, boolean[] visited, int[] answer){
         //탈출조건 1. 더이상 갈곳이 없다.
         //       2. 이미 방문한 곳이다.
 
-        answer[currentNode-1]=++sequence;  //순서를 전역변수로 만들어 준다.
+        answer[currentNode-1] = ++sequence;
 
-        for(int nextNode:nodeArray[currentNode]){  
-        if(visited[nextNode]){continue;} // 이미 방문한 곳이다.
-        visited[nextNode]=true;
-        DFS(nextNode,nodeArray,visited,answer);
+        for (int nextNode : nodeArray[currentNode]){  // 애초에 저장할때, 큰 값부터 넣기
+            if(visited[nextNode]){continue;} // 이미 방문한 곳이다.
+            visited[nextNode] = true;
+            DFS(nextNode, nodeArray,visited, answer);
         }
 
     }
+}
 ```

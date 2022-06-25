@@ -21,7 +21,7 @@ public class Main {
         int x;
         int y;
         StringBuilder sb =new StringBuilder();
-        // 한줄 한줄 M번 읽기
+
         for(int i=0; i<M; i++){
             st = new StringTokenizer(br.readLine());
             order = Integer.parseInt(st.nextToken());
@@ -42,13 +42,12 @@ public class Main {
         br.close();
 
 
-    }// 부모노드 얻기
+    }
     public static int getParent(int[] parent, int x){
         if(parent[x] == x) return x;
         return parent[x] = getParent(parent, parent[x]);
     }
 
-    // 두 부모 노드 합치기
     public static void unionParent(int[] parent, int x, int y){
         x = getParent(parent, x);
         y = getParent(parent, y);
@@ -56,7 +55,7 @@ public class Main {
         if(x > y)  parent[x] = y;
         else parent[y] =x ;
     }
-    // 부모가 같은지 확인 -> 즉 같이 연결되어 있는지 확인
+
     public static boolean findParent(int[] parent, int x, int y){
         x = getParent(parent, x);
         y = getParent(parent, y);

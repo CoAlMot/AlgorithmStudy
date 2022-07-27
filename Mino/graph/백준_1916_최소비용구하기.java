@@ -1,4 +1,4 @@
-package baekjoon.hide_bush_13549;
+package baekjoon.find_minimum_cost_1916;
 
 import java.io.*;
 import java.util.ArrayList;
